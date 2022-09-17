@@ -1,0 +1,190 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;                    
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid darkblue;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	
+	padding: 0.5em 1em 0.5em 1em;
+	border: 3px solid darkblue;
+	background-image: -moz-linear-gradient(
+	    30deg, darkgreen 0%, lightgreen 30%, white 50%, lightblue 80%, darkblue 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, darkgreen 0%, lightgreen 30%, white 50%, lightblue 80%, darkblue 100%);
+	background-image: -o-linear-gradient(
+	    30deg, darkgreen 0%, lightgreen 30%, white 50%, lightblue 80%, darkblue 100%);
+	background-image: linear-gradient(
+	    30deg, darkgreen 0%, lightgreen 30%, white 50%, lightblue 80%, darkblue 100%);
+}
+header h1 {
+	font-size: 500%;
+	
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: right;
+	padding: 0 0;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the navigation menu */
+
+#nav_menu ul  {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 25%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: lightgreen;
+}
+
+
+/* the styles for the section */
+main { 
+	clear: left;
+}
+main img {
+	float: center;
+	max-width: 100%;
+}
+
+/* The styles for the form  */
+
+#submit {
+	color: white;
+	background-color: darkblue;
+	margin-left: 20%;
+	padding: 0 2em;
+}
+/* The styles for the form */
+body h2 { padding-left: 5em;}
+fieldset {
+	border: none;
+}
+label {
+	float: left;
+	width: 15em;
+	text-align: right;
+	padding-right: .25em;
+	padding-left: 0;
+}
+label, input {
+	margin: .25em 0;
+	
+}
+input {
+	width: 20em;
+}
+input:focus {
+	border: 2px solid #0000ff;
+}
+#question { 
+	width: 35em;
+	margin-left: 10em;
+}
+
+
+
+
+/* the styles for the footer */
+footer {
+	clear: both;
+	background-color: green;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+
+	header img { float: none; }
+	header {
+        text-align: center;
+		padding: 1.5em 0 1.5em 0;
+    }
+	
+	
+	section {
+		float:none;
+		width: 85%;
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+		margin-right: 0;
+	}
+	article {
+		width: 95%;
+		float: none;
+		margin-right: 0;
+	}
+	aside {
+		float: none;
+		width: 85%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}
+	
+	
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background-color: lightgreen;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}

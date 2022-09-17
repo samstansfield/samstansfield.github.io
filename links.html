@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Climate Site</title>
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<h1>The Climate Site</h1>
+
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="greenhouse.html">Greenhouse Effect</a></li>
+        	<li><a href="history.html">History</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="links.html" class="current">Links</a></li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Our Mission</h2>
+			<p>The goal of this site is to provide background information on Climate Science for the non-specialist.</p>
+		</section>
+		<aside>
+			
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2019 Sam Stansfield</p>
+	</footer>
+</body>
+</html>

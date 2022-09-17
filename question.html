@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Climate Site</title>
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<img src="images/smaller_Earth-large-2-tone.jpg" alt="Earth Image">
+		<h1>The Climate Site</h1>
+		
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="greenhouse.html">Greenhouse Effect</a></li>
+        	<li><a href="history.html">History</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+    	</ul>
+	</nav>
+	<body>
+			<h2>Please Enter the Following Information:</h2>
+			<form action="contactus.html" method="get"
+        		name="contactus" id="contactus">
+    			<fieldset>
+        			<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" autofocus required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="email">E-Mail:</label>
+	        		<input type="email" name="email" id="email"  required><br>
+					
+					<textarea name="question" placeholder="Please write your question here" id="question"></textarea><br>
+				</fieldset>
+			</form>
+		<input id="submit" value="Submit" type="submit">
+	</body>
+	<footer>
+		<p>&copy; 2019 Sam Stansfield</p>
+	</footer>
+</body>
+</html>
+
